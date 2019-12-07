@@ -1,0 +1,155 @@
+https://codepen.io/ncluff003/pen/ZEYbJyB
+
+<!-- reveiw questions to Submit in today's file firt-lastname.txt --> 
+<!--
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+    Answer: Semantic HTML is meaningful markup.  It has meaning to the computer and to humans alike.  Like using <section> or <article> instead of <div>.
+
+    2. What is HTML used for?
+    Answer: HTML is used for the structure of the website.
+
+    3. What is an attribute and where do we put it?
+    Answer: An attribute is something like a class or id.  It goes inside of the opening tag, and each one can come in any order, but must be inside the opening tag. 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    Answer:  It is used for the main header.  Ideally, it should be only used once.
+
+    5. Name two tags that have required attributes
+    Answer: An <a> or anchor tag and an image tag. <img>
+
+    6. What do we put in the head of our HTML document?
+    Answer: This can be many things.  However, I know that we put a title, links to external CSS or JS, and also metadata.  I am sure there is more, but that's what came off the top of my head.
+    
+    7. What is an id?
+    Answer: An id is an attribute that is uniquely tied to ONE item on a website.
+
+    8. What elements can I add an id to?
+    Answer: Just about any tag can have an id added to it.  Just need to make sure it is the only one that is added of its kind.
+
+    9. How many times can I use the same id on a page?
+    Answer: Once.
+
+    10. What is a class?
+    Answer: Another attribute.
+
+    11. What elements can I add a class to?
+    Answer: Just about any HTML tag.
+
+    12. How many times can I use the same class on a page?
+    Answer: Many times on each page.
+
+    13. How do I get my link to open in a new tab?
+    Answer: add target="_blank" after the link in the href.  Other than that you can right click and or press control/command and click the link.
+
+    14. What is the alt attribute used for?
+    Answer: Alt is used for a description of an image or whatever does not load.  It is used especially for those who have troubles with sight to help them know what is being shown to them.
+
+    15. How do I reference an id?
+    Answer: referencing an id is done by using the hash.
+
+    16. What is the difference between a section and a div
+    Answer: It is not a big difference, but a section is more meaningful and relates to a specific part of any given website.  A div is a simple divider with absolutely no meaning, and usually is only used as a simple means to divide and design, nothing else.
+
+    17. What is CSS used for?
+    Answer: It is used for styling a website.  All for presentation.
+
+    18. How to we select an element? Example - every h2 on the page
+    Answer: h2 {
+
+    }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    Answer: A class is an attribute in which can be used multiple times throughout a page.  An id is an attribute which can only be used once on a page.
+    If you wanted to let anyone know if something was active, such as the part of a form to be shown when only one input at a time is to be shown, an id of active might be useful.  Whereas,
+    if you were to want a certain style to be applied to some pictures when it is being seen using a mobile device or a laptop, you could apply a class to each and every one.
+
+    20. How do we select classes in CSS?
+    Answer: By using the period on the keyboard, then typing the class name exactly as it is shown.
+
+    21. How do we select a p element with a single class of “human””?
+    Answer: p.human
+
+    22. What is a parent child selector? When would this be useful?
+    Answer: It is the right carrot bracket, > . It can be useful when wanting to select a direct child selector.
+
+    23. How do you select all links within a div with the class of sidebar?
+    Answer: div.sidebar
+
+    24. What is a pseudo selector?
+    Answer: A psuedo selector is a selector in which implies selecting an element when in a certain state.  :hover is used when an element is hovered over by the mouse.
+
+    25. What do we use the change the spacing between lines?
+    Answer: Multiple answers here.  However, I usually use either margin, padding, or line-height.
+
+    26. What do we use to change the spacing between letters?
+    Answer: You would use letter-spacing.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    Answer: text-transform.
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    Answer: border: 1px dotted #000000;
+
+    29. How do I select everything on the page?
+    Answer: Using the * selector;
+
+    30. How do I write a comment in CSS?
+    Answer: either using a double '//' for a single line comment, or /**/ to be able to do a multiline comment.
+
+    31. How do I find out what file I am in, when I am using the command line?
+    Answer: By using 'pwd'.  That will also give you exactly the full filepath as well.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    Answer: ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    Answer: rm. You should be careful because once it is removed, it cannot be undone, especially like the GUI when going to the trash can.
+
+    34. Why should I use version control?
+    Answer: I personally feel you should to keep track of versions of your code so you can get back to important checkpoints for your projects.
+
+    35. How often should I commit to github?
+    Answer: I personally feel anytime you feel like you completed a small chunk of code it should be done.
+
+    36. What is the command we would use to push our repo up to github?
+    Answer: git push -u 'branch name'.  The shortest is git push.
+
+    37. Walk me through Lambda's git flow.
+    Answer:
+    First: Forking the project.
+    Second: Add TL collaborator
+    Third: Clone the repo
+    Fourth: Create a branch
+    Fifth: Make Your changes
+    Sixth: Push Your branch
+    Seventh: Compare & Pull Request to YOUR BRANCH.  Not Lambda's base, or master.
+    Eighth: Add TL to our pull request.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    Answer: From my knowledge, an inline element is one in which does not break a new line or take up more than its own space.  Something like a p.
+    A block element will take up a full line, and be as wide as your screen.  It also can have a height and width assigned to it.  Inline elements cannot.
+
+    2. What happens when an element is positioned absolutely?
+    Answer: The element is taken out of the flow of the elements on the page.  It's position is positioned relative to the first element with the position of 'relative', even if
+    it makes it all the way to the body.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    Answer: You make it an inline-block element.
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Answer: Block -> Div, Section, Header.  Inline -> p, img. Inline-block -> button.
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+    Answer: The box model is the content, its padding, then the border, and then the margin around the border.  In other words, the content is like the text,
+    image, or whatever you put on the screen.  The padding is the space between that content and the border or wall around it.  The border is exactly what it says.  It is a
+    wall or border of the content and padding.  Kind of like a box being packed.  Your gift is in the middle, than you have padding or bubblewrap/peanuts, and the you
+    have the box itself which is the border.  After that the space between your box and other boxes or the car/truck is your margin.
+
+    The box model fix, as I understand it to be is box-sizing: border-box.  It helps create stability in our layouts.
+
+
+   --> 
